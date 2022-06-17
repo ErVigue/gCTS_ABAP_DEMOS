@@ -1,0 +1,31 @@
+[
+ {
+  "table":"T880",
+  "data":
+  [
+   {
+    "MANDT":"100",
+    "RCOMP":"GITABA",
+    "NAME1":"",
+    "CNTRY":"IE",
+    "NAME2":"",
+    "LANGU":"",
+    "STRET":"none",
+    "POBOX":"",
+    "PSTLC":"",
+    "CITY":"",
+    "CURR":"",
+    "MODCP":"",
+    "GLSIP":"",
+    "RESTA":"",
+    "RFORM":"",
+    "ZWEIG":"",
+    "MCOMP":"",
+    "MCLNT":0,
+    "LCCOMP":"",
+    "STRT2":"",
+    "INDPO":""
+   }
+  ]
+ }
+]
