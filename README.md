@@ -1,2 +1,2 @@
 # ABAP-gCTS
-gCTS Demo
+Remote Repository to Test gCTS in S4HAN 2021
