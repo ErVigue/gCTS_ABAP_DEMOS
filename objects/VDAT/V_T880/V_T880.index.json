@@ -12,6 +12,20 @@
      },
      {
       "key":"RCOMP",
+      "value":"999999"
+     }
+    ],
+    "hash":"e3sczZbPti7zuyIgq7NxzuQgS2E="
+   },
+   {
+    "columns":
+    [
+     {
+      "key":"MANDT",
+      "value":"100"
+     },
+     {
+      "key":"RCOMP",
       "value":"GITABA"
      }
     ],
