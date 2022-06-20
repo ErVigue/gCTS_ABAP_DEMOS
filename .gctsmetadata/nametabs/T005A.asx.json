@@ -1,0 +1,32 @@
+[
+ {
+  "table":"T005A",
+  "nametab":
+  [
+   {
+    "NAME":"MANDT",
+    "KEY":"X",
+    "TYPE":"C",
+    "LENGTH":3,
+    "DECIMALS":-1
+   },
+   {
+    "NAME":"ADDRS",
+    "KEY":"X",
+    "TYPE":"C",
+    "LENGTH":3,
+    "DECIMALS":-1
+   }
+  ],
+  "properties":
+  [
+   {
+    "CLIENTDEPENDENCY":"YES",
+    "DELIVERYCLASS":"E",
+    "TABART":"APPL2",
+    "TABFORM":"T",
+    "REFNAME":"-"
+   }
+  ]
+ }
+]
