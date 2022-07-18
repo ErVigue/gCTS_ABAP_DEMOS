@@ -8,6 +8,18 @@
     "SPRAS":"E",
     "ADDRS":"024",
     "LTEXT":"Costa Rica"
+   },
+   {
+    "MANDT":"100",
+    "SPRAS":"E",
+    "ADDRS":"114",
+    "LTEXT":"FIji Islands"
+   },
+   {
+    "MANDT":"100",
+    "SPRAS":"E",
+    "ADDRS":"115",
+    "LTEXT":"New Country"
    }
   ]
  }
