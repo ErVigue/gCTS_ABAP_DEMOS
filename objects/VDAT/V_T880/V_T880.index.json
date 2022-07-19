@@ -26,6 +26,20 @@
      },
      {
       "key":"RCOMP",
+      "value":"EVG"
+     }
+    ],
+    "hash":"zXlQjZZtMlqe2kJ7/uarddjhv6c="
+   },
+   {
+    "columns":
+    [
+     {
+      "key":"MANDT",
+      "value":"100"
+     },
+     {
+      "key":"RCOMP",
       "value":"GITABA"
      }
     ],
