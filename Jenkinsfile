@@ -30,8 +30,7 @@ pipeline {
           remoteRepositoryURL: REPO_URL,
           role: 'SOURCE',
           vSID: 'QWE',
-          verbose: true,
-          type: "GITHUB")       
+          verbose: true)       
 
       }
     }
