@@ -29,7 +29,10 @@ pipeline {
           repository: REPO,
           remoteRepositoryURL: REPO_URL,
           role: 'SOURCE',
-          vSID: 'QWE')
+          vSID: 'QWE',
+          verbose: true)
+        
+        
 
       }
     }
