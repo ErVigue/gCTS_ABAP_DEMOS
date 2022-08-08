@@ -6,11 +6,11 @@ pipeline {
   }
 
   environment {
-    DEMOCREDS = 'ABAPUserPasswordCredentialsId'
-    HOST = 'https://<host of the ABAP system>:<port>'
-    CLIENT = '000'
-    REPO = '<repository name>'
-    REPO_URL = "<URL of the remote Git Repository>"
+    DEMOCREDS = 'VILLALOBOSE'
+    HOST = 'https://10.79.25.9:44301'
+    CLIENT = '100'
+    REPO = 'ervigue-gcts_abap_demos'
+    REPO_URL = "https://github.com/ErVigue/gCTS_ABAP_DEMOS"
   }
 
   stages {
@@ -29,7 +29,7 @@ pipeline {
           repository: REPO,
           remoteRepositoryURL: REPO_URL,
           role: 'SOURCE',
-          vSID: '<vSID>')
+          vSID: 'QWE')
 
       }
     }
