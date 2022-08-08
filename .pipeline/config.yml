@@ -1,0 +1,13 @@
+general:
+steps:
+ gctsDeploy:
+   host: "https://10.79.25.9:44301"
+   client: "100"
+   abapCredentialsId: "VILLALOBOSE"
+   repository: "ervigue-gcts_abap_demos"
+   remoteRepositoryURL: "https://github.com/ErVigue/gCTS_ABAP_DEMOS"
+   role: "SOURCE"
+   vSID: "<the_vsid_assigned_to_you>"
+   verbose: true
+   type: "QWE"
+   rollback: false
