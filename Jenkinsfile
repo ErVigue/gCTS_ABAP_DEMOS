@@ -15,6 +15,7 @@ pipeline {
       steps {
         gctsDeploy(
           script: this
+          )
       }
     }
 
