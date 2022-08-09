@@ -5,7 +5,7 @@ pipeline{
      disableConcurrentBuilds()
     }
       stages {
-        stage('prepare') {
+        stage('Prepare') {
         when { anyOf { branch 'main' } }
           steps {
           checkout scm
