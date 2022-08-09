@@ -1,7 +1,7 @@
 general:
 steps:
  gctsDeploy:
-   host: "https://10.79.25.9:44301"
+   host: "https://10.79.25.9:44300"
    client: "100"
    abapCredentialsId: "VILLALOBOSE"
    repository: "ervigue-gcts_abap_demos"
