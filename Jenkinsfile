@@ -5,14 +5,6 @@ pipeline {
     disableConcurrentBuilds()
   }
 
-  environment {
-    DEMOCREDS = 'VILLALOBOSE'
-    HOST = 'https://10.79.25.9:44301'
-    CLIENT = '100'
-    REPO = 'ervigue-gcts_abap_demos'
-    REPO_URL = "https://github.com/ErVigue/gCTS_ABAP_DEMOS"
-  }
-
   stages {
     stage('gCTS Deploy') {
       when {
