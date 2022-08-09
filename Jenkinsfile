@@ -1,4 +1,4 @@
-@Library(['piper-lib']) _
+@Library(['piper-lib-os']) _
 pipeline{
   agent any
      options {
