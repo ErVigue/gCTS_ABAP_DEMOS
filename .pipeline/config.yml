@@ -1,8 +1,8 @@
 general:
 steps:
  gctsDeploy:
-  host: "https://demo-s4h.alm.only.sap:44350"
-  client: "804"
+  host: "https://vhcals4hci:44300"
+  client: "200"
   abapCredentialsId: "VILLALOBOSE"
   repository: "ervigue-gcts_abap_demos"
   remoteRepositoryURL: "https://github.com/ErVigue/gCTS_ABAP_DEMOS"
