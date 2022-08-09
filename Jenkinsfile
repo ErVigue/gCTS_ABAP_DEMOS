@@ -14,16 +14,7 @@ pipeline {
       }
       steps {
         gctsDeploy(
-          script: this,
-          host: HOST,
-          client: CLIENT,
-          abapCredentialsId: DEMOCREDS,
-          repository: REPO,
-          remoteRepositoryURL: REPO_URL,
-          role: 'SOURCE',
-          vSID: 'QWE',
-          verbose: true)       
-
+          script: this
       }
     }
 
