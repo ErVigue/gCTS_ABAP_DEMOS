@@ -50,7 +50,7 @@ pipeline {
           abapCredentialsId: DEMOCREDS,
           repository: REPO,
           atcVariant: 'CHKV_TEST1',
-          scope: 'repository',
+          scope: 'packages',
           commit: "${env.GIT_COMMIT}",
           workspace: "${WORKSPACE}")
         } catch (Exception ex) {
