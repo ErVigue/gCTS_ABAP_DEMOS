@@ -45,7 +45,7 @@ pipeline {
           try {
           gctsExecuteABAPQualityChecks(
           script: this,
-          host: HOST,
+          host: 'http://vhcals4hci.dummy.nodomain:50000',
           client: CLIENT,
           abapCredentialsId: DEMOCREDS,
           repository: REPO,
