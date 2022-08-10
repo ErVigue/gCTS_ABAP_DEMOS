@@ -49,7 +49,8 @@ pipeline {
           client: CLIENT,
           abapCredentialsId: DEMOCREDS,
           repository: REPO,
-          scope: 'localChangedObjects',
+          atcVariant: 'CHKV_TEST1',
+          scope: 'repository',
           commit: "${env.GIT_COMMIT}",
           workspace: "${WORKSPACE}")
         } catch (Exception ex) {
