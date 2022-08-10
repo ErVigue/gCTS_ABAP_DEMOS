@@ -51,7 +51,7 @@ pipeline {
           repository: REPO,
           atcVariant: 'CHKV_TEST1',
           scope: 'packages',
-          verbose: True
+          verbose: True,
           commit: "${env.GIT_COMMIT}",
           workspace: "${WORKSPACE}")
         } catch (Exception ex) {
