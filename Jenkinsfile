@@ -45,13 +45,13 @@ pipeline {
           try {
           gctsExecuteABAPQualityChecks(
           script: this,
-          host: HOST,
+          host: 'https://10.79.25.9:44300',
           client: CLIENT,
           abapCredentialsId: DEMOCREDS,
           repository: REPO,
           atcVariant: 'CHKV_TEST1',
           scope: 'packages',
-          verbose: True,
+          verbose: true,
           commit: "${env.GIT_COMMIT}",
           workspace: "${WORKSPACE}")
         } catch (Exception ex) {
