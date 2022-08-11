@@ -45,11 +45,11 @@ pipeline {
           try {
           gctsExecuteABAPQualityChecks(
           script: this,
-          host: 'http://vhcals4hci.dummy.nodomain:50000',
+          host: HOST,
           client: CLIENT,
           abapCredentialsId: DEMOCREDS,
           repository: REPO,
-          atcVariant: 'CHKV_TEST1',
+          atcVariant: 'ZGCTS_ATC',
           scope: 'packages',
           verbose: true,
           commit: "${env.GIT_COMMIT}",
