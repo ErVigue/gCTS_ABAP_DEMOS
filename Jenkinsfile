@@ -49,7 +49,7 @@ pipeline {
           client: CLIENT,
           abapCredentialsId: DEMOCREDS,
           repository: REPO,
-          atcVariant: 'ZGCTS_ATC',
+          atcVariant: 'DEFAULT',
           scope: 'packages',
           verbose: true,
           commit: "${env.GIT_COMMIT}",
