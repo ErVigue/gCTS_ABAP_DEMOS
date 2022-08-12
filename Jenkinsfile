@@ -9,7 +9,7 @@ pipeline {
     DEMOCREDS = 'VILLALOBOSE'
     HOST = 'http://10.79.25.9:50000'
     CLIENT = '100'
-    REPO = 'ervigue-gcts_abap_demo'
+    REPO = 'ErVigue-GCTS_ABAP_TEST'
     REPO_URL = "https://github.com/ErVigue/GCTS_ABAP_DEMO"
   }
 
