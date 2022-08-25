@@ -1,0 +1,43 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+jobs:
+  - job: downloadPiper
+    pool:
+      vmImage: ubuntu-latest
+    steps:
+    - checkout: none
+    - task: Cache@2
+      inputs:
+        key: piper-go-official
+        path: bin
+        cacheHitVar: FOUND_PIPER
+      displayName: Cache piper go binary
+    - script: |
+          mkdir -p bin
+          curl -L --output bin/piper https://github.com/SAP/jenkins-library/releases/download/v1.199.0/piper
+          chmod +x bin/piper
+      condition: ne(variables.FOUND_PIPER, 'true')
+      displayName: 'Download Piper'
+    - script: bin/piper version
+      displayName: 'Piper Version'
+
+  - job: gctsDeploy
+    dependsOn: downloadPiper
+    variables:
+    - group: development
+    pool:
+      vmImage: 'ubuntu-latest'
+    steps:
+    - task: Cache@2
+      inputs:
+        key: piper-go-official
+        path: bin 
+      displayName: gCTS Deploy
+    - script: |
+        bin/piper gctsDeploy --verbose --client $(ABAP-CLIENT) --host $(ABAP-HOST) --password $(ABAP-PW) --repository $(GIT-REPO) --username $(ABAP-USER) --remoteRepositoryURL $(REPO-URL) --vSID $(VIRTUAL-SID)
