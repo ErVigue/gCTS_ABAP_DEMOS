@@ -20,12 +20,14 @@ jobs:
       displayName: Cache piper go binary
     - script: |
           mkdir -p bin
-          curl -L --output bin/piper https://github.com/SAP/jenkins-library/releases/download/v1.240.0/piper
+          curl -L --output bin/piper https://github.com/SAP/jenkins-library/releases/download/v1.199.0/piper
           chmod +x bin/piper
       condition: ne(variables.FOUND_PIPER, 'true')
       displayName: 'Download Piper'
     - script: bin/piper version
       displayName: 'Piper Version'
+
+####### Piper Libraries #####
 
   - job: gctsDeploy
     dependsOn: downloadPiper
