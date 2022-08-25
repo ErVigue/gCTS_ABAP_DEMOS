@@ -40,4 +40,4 @@ jobs:
         path: bin 
       displayName: gCTS Deploy
     - script: |
-        bin/piper gctsDeploy --verbose --client $(ABAP-CLIENT) --host $(ABAP-HOST) --password $(ABAP-PW) --repository $(GIT-REPO) --username $(ABAP-USER) --remoteRepositoryURL $(REPO-URL) --vSID $(SID)
+        bin/piper gctsDeploy --verbose --client $(ABAP-CLIENT) --host $(ABAP-HOST) --password $(ABAP-PW) --repository $(GCTS-REPO) --username $(ABAP-USER) --remoteRepositoryURL $(REPO-URL) --vSID $(SID)
