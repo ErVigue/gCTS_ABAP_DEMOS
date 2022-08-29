@@ -43,3 +43,9 @@ jobs:
       displayName: gCTS Deploy
     - script: |
         bin/piper gctsDeploy --verbose --client $(ABAP-CLIENT) --host $(ABAP-HOST) --password $(ABAP-PW) --repository $(GCTS-REPO) --username $(ABAP-USER) --remoteRepositoryURL $(REPO-URL) --vSID $(SID) --commit "0d264a0"
+##############################################        
+      displayName: gctsExecuteABAPQualityChecks
+    - script: |
+        bin/piper gctsExecuteABAPQualityChecks --verbose --client $(ABAP-CLIENT) --host $(ABAP-HOST) --password $(ABAP-PW) --repository $(GCTS-REPO) --username $(ABAP-USER) --remoteRepositoryURL $(REPO-URL) --vSID $(SID) --commit "0d264a0"
+        
+
