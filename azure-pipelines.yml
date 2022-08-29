@@ -50,7 +50,12 @@ jobs:
     pool:
      vmImage: 'ubuntu-latest'
     steps:
-     - script: |
+    - task: Cache@2
+      inputs:
+        key: piper-cli-official
+        path: bin 
+      displayName: "ABAP Checks"
+    - script: |
         bin/piper gctsExecuteABAPQualityChecks --verbose --client $(ABAP-CLIENT) --host $(ABAP-HOST) --password $(ABAP-PW) --repository $(GCTS-REPO) --username $(ABAP-USER) --remoteRepositoryURL $(REPO-URL) --vSID $(SID) --commit "0d264a0"
 
 
