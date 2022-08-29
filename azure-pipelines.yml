@@ -32,7 +32,6 @@ stages:
   - stage: gCTDS_Deploy
     jobs:
     - job: gctsDeploy
-      dependsOn: downloadPiper
       variables:
       - group: development
       pool:
