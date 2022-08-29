@@ -6,7 +6,7 @@
 trigger:
 - main
 stages:
-  - stage: Download-Piper
+  - stage: Download_Piper
     jobs:
       - job: downloadPiper
         pool:
@@ -29,7 +29,7 @@ stages:
           displayName: 'Piper Version'
 
 ####### Piper Libraries #####
-  - stage: gCTDS-Deploy
+  - stage: gCTDS_Deploy
     jobs:
     - job: gctsDeploy
       dependsOn: downloadPiper
@@ -46,7 +46,7 @@ stages:
       - script: |
           bin/piper gctsDeploy --verbose --client $(ABAP-CLIENT) --host $(ABAP-HOST) --password $(ABAP-PW) --repository $(GCTS-REPO) --username $(ABAP-USER) --remoteRepositoryURL $(REPO-URL) --vSID $(SID) --commit "0d264a0"
 
-  - stage: Test
+  - stage: ABAP_Quality_Checks
     jobs:
     - job: executeABAPQualityChecks
       variables:
