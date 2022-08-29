@@ -14,10 +14,10 @@ jobs:
     - checkout: none
     - task: Cache@2
       inputs:
-        key: piper-go-official
+        key: piper-cli-official
         path: bin
         cacheHitVar: FOUND_PIPER
-      displayName: Cache piper go binary
+      displayName: Cache piper cli binary
     - script: |
           mkdir -p bin
           curl -L --output bin/piper https://github.com/SAP/jenkins-library/releases/latest/download/piper_master
@@ -38,8 +38,8 @@ jobs:
     steps:
     - task: Cache@2
       inputs:
-        key: piper-go-official
+        key: piper-cli-official
         path: bin 
       displayName: gCTS Deploy
     - script: |
-        bin/piper gctsDeploy --verbose --client $(ABAP-CLIENT) --host $(ABAP-HOST) --password $(ABAP-PW) --repository $(GCTS-REPO) --username $(ABAP-USER) --remoteRepositoryURL $(REPO-URL) --vSID $(SID)
+        bin/piper gctsDeploy --verbose --client $(ABAP-CLIENT) --host $(ABAP-HOST) --password $(ABAP-PW) --repository $(GCTS-REPO) --username $(ABAP-USER) --remoteRepositoryURL $(REPO-URL) --vSID $(SID) --commit "0d264a0"
