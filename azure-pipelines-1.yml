@@ -10,12 +10,11 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
 
 - script: 
-    curl --help
+    curl --version
+  displayName: 'curl version'
 
 - script: |
-    curl --url https://mo-cd1351cf9.coe-alm.c.eu-de-1.cloud.sap:50001/sap/opu/odata/SALM/EXT_DEVOPS_INTEG_SRV/WorkItemSet(guid=guid'FA163E5E-4B54-1EDC-BBB0-8DFCC4252095') -H "Authorization: Basic STg0MTM5ODpvdHNlbnJlMjI="
+    curl -I https://mo-cd1351cf9.coe-alm.c.eu-de-1.cloud.sap:50001/sap/opu/odata/SALM/EXT_DEVOPS_INTEG_SRV/WorkItemSet(guid=guid'FA163E5E-4B54-1EDC-BBB0-8DFCC4252095') -H "Authorization: Basic STg0MTM5ODpvdHNlbnJlMjI="
   displayName: 'Reading WI'
