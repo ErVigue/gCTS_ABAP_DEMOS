@@ -7,7 +7,7 @@ pipeline {
 
   environment {
     DEMOCREDS = 'VILLALOBOSE'
-    HOST = 'http://10.79.25.9:50000'
+    HOST = 'https://10.79.25.9:44300'
     CLIENT = '100'
     REPO = 'ervigue-gcts_abap_demo'
     REPO_URL = "https://github.com/ErVigue/GCTS_ABAP_DEMO"
